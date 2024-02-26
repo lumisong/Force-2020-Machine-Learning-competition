@@ -4,13 +4,7 @@
 
 ## 配置环境问题
 
-在环境下直接使用conda进行install
-
-```shell
-conda install -c conda-forge pandas
-conda install -c conda-forge matplotlib
-conda install -c conda-forge scikit-learn
-```
+问题：
 
 1. conda环境在 Python环境管理器中不显示了。
 2. 使用交互操作时，出现了很多意想不到的问题，--json 可能是这个出现导致的问题。
@@ -40,6 +34,7 @@ Error: Failed to get latest package information for /home/lumisong/文档/Force-
     at async Promise.all (index 1)
     at getOutdatedPackages (/home/lumisong/.vscode/extensions/donjayamanne.python-environment-manager-1.2.4/out/client/extension.js:19122:46)
 ```
+
 对比：直接Terminal中操作，不使用--json参数，更新
 
 ```shell
@@ -116,8 +111,7 @@ The following packages will be UPDATED:
 
 ```
 
-```
-
+```text
 The following packages will be SUPERSEDED by a higher-priority channel:
 
   backcall           conda-forge::backcall-0.2.0-pyh9f0ad1~ --> anaconda/pkgs/main::backcall-0.2.0-pyhd3eb1b0_0
@@ -182,3 +176,28 @@ pandas 安装过程中的问题
 conda install pandas
 
 这将会安装最新的、与您当前 Python 版本兼容的 pandas 版本。
+
+## 解决方案
+
+在环境下直接使用conda进行install
+
+环境路径: 零时解决方案，路径位置`/home/lumisong/文档/Force-2020-Machine-Learning-competition-master/.conda`注意这个路径是在`Force-2020-Machine-Learning-competition-master`目录下的`.conda`目录。不要将原始的conda环境路径删除。
+后续需要进行环境迁移。
+
+```shell
+conda install -c conda-forge pandas
+conda install -c conda-forge matplotlib
+conda install -c conda-forge scikit-learn
+```
+
+基础环境配置完成。
+
+1. 第一名OlawaIel的环境配置
+   1. xgboost安装配置
+
+      ```shell
+      conda install -c conda-forge xgboost
+      ```
+
+2. 第二名的环境配置
+...
