@@ -1,0 +1,3 @@
+lithology_competition/data/train.csv
+lithology_competition/data/models/model.pkl
+lithology_competition/data/models/scaler.pkl
