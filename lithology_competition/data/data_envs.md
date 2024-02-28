@@ -192,11 +192,17 @@ conda install -c conda-forge scikit-learn
 
 基础环境配置完成。
 
-1. 第一名OlawaIel的环境配置
+1. 第一名OlawaIel的环境配置：force_OlawaleI(3.11.8)
    1. xgboost安装配置
 
       ```shell
       conda install -c conda-forge xgboost
+      ```
+
+      GPU专用版本
+
+      ```shell
+      conda install -c conda-forge py-xgboost-gpu
       ```
 
 2. 第二名的环境配置
